@@ -1,0 +1,341 @@
+*{      /*清除所有样式，且规定所有字体样式*/
+	padding: 0;
+	margin: 0;
+	list-style: none;	
+	font-family: "微软雅黑";
+}
+#clock{  /*设置显示的时间样式*/
+	height: 20px;
+	position: absolute;
+	top: 40px;
+	left: 150px;
+	font-size: 30px;
+	font-family: arial;
+	color:white;
+}
+.sinput {   /*设置登录框里的输入框的外边距*/
+	margin-top: 20px;
+	margin-left: 22px;
+}
+.sinput input {   /*设置输入框的长宽*/
+	width: 347px;
+	height: 40px;
+}
+
+.sinput a {  /*设置登录按钮的样式*/
+	width: 350px;
+	height: 47px;
+	display: block;
+	text-align: center;
+	line-height: 47px;
+	background-color: #0094ff;
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 5px;
+}
+
+#con,#dreg {  /*设置登录、注册模块的样式*/
+	/*模块默认为隐藏*/
+	display: none;  
+	position: absolute;
+	/*设置弹出框位于屏幕中间*/
+	top:50%;
+	left: 50%;	
+	transform: translate(-50%,-50%);
+	border: 2px solid #0094FF;
+	background-color: white;
+	/*使div位于最上层*/
+	z-index: 1; 
+	width: 400px;
+	height: 220px;
+}
+#dreg{/*设置注册框的高度为400px*/
+	height: 400px;
+}
+
+.dtop{  /*设置整个上面的div的宽度*/
+	height: 900px;
+}
+.dlogo{
+	/*设置div的位置，使之绝对定位*/
+	float: left;
+	position: absolute;
+	top: 2%;
+	left: 2%;
+}
+.dlogo img{/*设置图标大小*/
+	width: 100px;
+	height: 70px;
+}
+.dtext{/*设置图片位置*/
+	float: left;
+	position: absolute;
+	top: 290px;
+	left: 30%;
+}
+.dnav{/*设置右上角的登录与注册按钮的样式*/
+	float: right;  /*右浮动*/
+	width: 230px;
+	height: 80px;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+.dtop{
+	width: 100%;
+	background: url(../img/1498652126976.jpeg);
+	overflow: hidden;/*当元素溢出时隐藏*/
+}
+.dnav ul li{/*设置登录注册的方框样式*/
+	float: left;
+	width: 100px;
+	height: 60px;
+	border: 1px solid white;
+	margin-left: 10px;
+}
+.dnav ul li a{/*设置字体等样式*/
+	text-decoration: none;
+	width: 100px;
+	height: 60px;
+	display: block;
+	line-height: 60px;/*行高60px*/
+	text-align: center;	
+	color: white;
+	font-size: 20px;
+}
+.dnav ul li a:hover{/*实现当鼠标放在按钮上的样式*/
+	color: black;
+}
+.navlogo{  /*logo图片样式*/
+	float: left;
+	height: 64px;
+}
+.navbar{
+	float: left;
+	margin-left: 40px;	
+	height: 64px;
+}
+.navbar ul li{
+	float: left;
+	margin-left: 20px;
+}
+.navbar ul li a{
+	height: 64px;
+	line-height: 64px;
+	color: black;
+	text-decoration: none;
+	font-size: 24px;
+	font-family: "宋体";
+}
+.navbar ul li a:hover{
+	color: #ccc;/*鼠标悬停样式*/
+}
+.topnav{/*使导航栏始终在上方显示*/
+	left: 0;
+	top: 0;
+	z-index: 100;
+	width: 100%;
+	height: 64px;
+}
+.hotpic{	
+	height: 1050px;
+	width: 100%;
+	background-color: black;/*定义背景色*/
+	
+}
+.hottitle{
+	float: left;/*使标题向左浮动*/
+	margin-left: 50px;
+	margin-top: 30px;
+}
+.hottitle strong{
+	color: floralwhite;
+	font-size: 80px;
+	font-family: "华文行楷";/*设置标题字体*/
+}
+.hotsearch{
+	position: relative;/*相对定位*/
+	float: right;
+	margin-right: 50px;
+	margin-top: 30px;
+}
+.hotsearch input{
+	width: 400px;
+	height: 50px;
+	border: 2px solid orangered;
+	color: white;
+	line-height: 50px;	
+	background-color: black;
+	font-size: 22px;
+}
+.hotsearch a{	
+	position: absolute;
+	display: block;
+	float: right;/*向右浮动*/
+	right: 0px;
+	top:2px;
+}
+#layer-photos-demo{
+	margin-top: 10px;
+	margin-left: 3%;
+	float: left;/*图片整体向左浮动*/
+	width: 94%;
+}
+#layer-photos-demo img{
+	margin-left: 75px;
+	margin-bottom: 75px;
+	width: 325px;
+	height: 220px;
+	border: solid mistyrose;/*图片边框*/
+}
+.slidepic{
+	width: 94%;
+	height: 400px;
+	margin: 50px auto;
+
+}
+.bg{
+	background-color: black;
+	width: 100%;
+	height: 550px;
+	position: absolute;
+	z-index: -1;
+	top: 2300px;
+}
+.slidepic li{
+	float: left;
+}
+.pic1{
+	background-image: url(../img/004.jpg);  /*设置div块的背景图片*/
+}
+.pic2{
+	background-image: url(../img/03.jpeg);   /*设置div块的背景图片*/
+}
+.pic3{
+	background-image: url(../img/0001.jpg);    /*设置div块的背景图片*/
+}
+.pic4{
+	background-image: url(../img/0003.jpg);    /*设置div块的背景图片*/
+	width: 789px;
+}
+.dtxt{              /*定义一个类,由滑动相册文字部分div块调用*/
+	width: 100px;
+    height: 429px;
+    background-color:#000;/*背景颜色*/
+    opacity: 50;     /*透明度*/
+    background: rgba(0,0,0,0.5);/*0.5*/
+}
+.dtxt p{
+	float: left;/*设置向左浮动*/
+    color:papayawhip;  /*字体颜色为淡粉  */
+}
+/*.p1{
+	width: 12px;
+    font-size: 12px;    
+    padding: 25px 25px 0px 20px;
+}*/
+.p2{
+	font-family: "华文楷体";  /*字体为华文楷体*/
+	width: 17px;    /*宽度17像素*/
+	
+    font-size: 17px;    /*字体大小17像素*/
+    margin-top: 15px;     /*距div块顶边距为15像素*/
+}
+#dmarquee{	
+	margin-top: 30px;	
+	height: 150px;
+	width: 96%;	
+	margin-left: 2%;
+	overflow:hidden;
+	border: 1px solid #ccc;
+}
+#dmarquee ul li{
+	float: left;
+	margin-left: 2%;
+	margin-top: 15px;
+}
+#dmarquee ul li img{
+	width: 200px;
+	height: 120px;
+	display: block;
+}
+.d-pic-wall{	/*大的div*/
+	position: relative;/*让里面的图片相对外面的div进行定位*/
+	height: 400px;
+	background-color: #000;
+}
+.d-pic-wall img{
+	width: 100%;
+	height: 400px;
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+.d-wall-title strong{/*对字体格式进行设置*/
+	color: white;
+	font-size: 32px;
+	font-family: "宋体";
+	margin-left: 50px;
+	margin-top: 30px;
+}
+.pw-1{		
+	position: absolute;	
+	bottom: 311px;/*离底部331px*/
+	left: 1%;  /*离左边%1的距离*/
+	transform: rotate(12deg);/*旋转角度12度*/
+}
+
+.pw-2{		
+	position: absolute;	
+	bottom: 291px;
+	left: 17%;
+	transform: rotate(-5deg);	
+}
+.pw-3{		
+	position: absolute;	
+	bottom: 301px;
+	left: 28%;
+	transform: rotate(12deg);	
+}
+.pw-4{		
+	position: absolute;	
+	bottom: 250px;
+	left: 38%;
+	transform: rotate(-5deg);	
+}
+.pw-5{		
+	position: absolute;	
+	bottom: 260px;
+	left: 43%;
+	transform: rotate(-10deg);	
+}
+.pw-6{		
+	position: absolute;	
+	bottom: 310px;
+	left: 60%;
+	transform: rotate(13deg);	
+}
+.pw-7{		
+	position: absolute;	
+	bottom: 290px;
+	left: 70%;
+	transform: rotate(7deg);	
+}
+.pw-8{		
+	position: absolute;	
+	bottom: 206px;
+	left: 78%;
+	transform: rotate(-30deg);	
+}
+
+.pw-1 img,.pw-2 img,.pw-3 img,.pw-4 img,.pw-5 img,.pw-6 img,.pw-7 img,.pw-8 img{
+	border: 8px solid #fff;
+	/*border-radius: 30px;*/
+	width: 200px;       /*设置所有的图片边框和宽高*/
+	height: 200px;
+}
+.pw-1:hover,.pw-2:hover,.pw-3:hover,.pw-4:hover,.pw-5:hover,.pw-6:hover,.pw-7:hover,.pw-8:hover,.pw-9:hover,.pw-10:hover,.pw-11:hover{
+	transform:rotate(0deg) scale(1.7);/*顺时针旋转40度，放大1.2倍*/
+	transition: all 1s ease;  /*在1s内实现上述变换*/
+	z-index: 99;   /*处于最上层*/   /*设置所有图片鼠标悬停样式*/
+}

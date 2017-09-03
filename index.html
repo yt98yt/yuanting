@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>时光留影首页</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="js/layer/skin/default/layer.css" />
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/layer/layer.js"></script>
+		<script type="text/javascript" src="js/jquery.kxbdMarquee.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+
+	<body>
+		<!--登录框开始-->
+		<div id="con">
+			<form id="loginForm">
+				<div class="sinput">
+					<input type="text" placeholder="手机/邮箱/用户名" name="txtUserName" id="txtUserName"  onblur="checkLogin()"/>
+				</div>
+				<div class="sinput">
+					<input type="password" placeholder="请输入密码" name="txtPwd" id="txtPwd"  onblur="checkLogin()"/>
+				</div>
+				<div class="sinput">
+					<a href="#" id="btnLogin" onclick="checkLogin()">登录</a>
+				</div>
+			</form>
+		</div>
+		<!--登录框结束-->
+
+		<!--注册开始-->
+		<div id="dreg">
+			<form id="regForm">
+				<div class="sinput">
+					<input type="text" placeholder="手机/邮箱/用户名" name="uregname" id="uregname" />
+				</div>
+				<div class="sinput">
+					<input type="password" placeholder="请输入密码" name="uregpwd" id="uregpwd" />
+				</div>
+				<div class="sinput">
+					<input type="password" placeholder="请输入确认密码" name="uregconfirmpwd" id="uregconfirmpwd" />
+				</div>
+				<div class="sinput">
+					<input type="text" placeholder="请输入注册邮箱" name="uregemail" id="uregemail" />
+				</div>
+				<div class="sinput">
+					<input type="text" placeholder="请输入注册QQ号码" name="uregqq" id="uregqq" />
+				</div>
+				<div class="sinput">
+					<a href="#" id="btnreg" onclick="hide1()">注册</a>
+				</div>
+			</form>
+		</div>
+		<!--注册结束-->
+
+		<!--头部开始-->
+		<div class="dtop" id="dtop">
+			<div id="d1">
+				<nav class="dnav" id="dnav">
+					<ul>
+						<li>
+							<a href="#" id="aLogin" onclick="display()">登录</a>
+						</li>
+						<li>
+							<a href="#" id="aReg" onclick="display1()">注册</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div id="clock" onload="Time()"></div>
+
+			<div class="dlogo">
+				<img src="img/logowhite.png" />
+			</div>
+
+			<div class="dtext">
+				<img src="img/slogan.png" />
+			</div>
+		</div>
+		<!--头部结束-->
+
+		<!--头部导航栏开始-->
+		<div class="topnav">
+			<div class="navlogo">
+				<img src="img/logoliuying.png" />
+			</div>
+			<div class="navbar">
+				<ul>
+					<li>
+						<a href="javascript:">首页</a>
+					</li>
+					<li>
+						<a href="javascript:">热门</a>
+					</li>
+					<li>
+						<a href="javascript:">关于</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--头部导航栏结束-->
+		
+		
+		<!--个性化相册墙开始 -->
+		<div class="d-pic-wall">    <!--用div布局出一个照片墙 引用类里面的效果-->
+			<img src="img/555555.jpg" />   <!--插入一张照片-->
+			<div class="d-wall-title">      <!--将此张照片引用为类里面的效果-->
+				<strong>个性化相册墙</strong>
+			</div>
+			<div class="pw-1">       <!--插入一张照片-->
+				<img src="img/111.jpg" />    <!--将此张照片引用为类里面的效果-->
+			</div>
+			<div class="pw-2">
+				<img src="img/222.jpg" />
+			</div>
+			<div class="pw-3">
+				<img src="img/333.jpg" />
+			</div>
+			<!--<div class="pw-4">
+				<img src="img/444.jpg" />
+			</div>-->
+			<div class="pw-5">
+				<img src="img/555.jpg" />
+			</div>
+			<div class="pw-6">
+				<img src="img/666.jpg" />
+			</div>
+			<div class="pw-7">
+				<img src="img/444.jpg" />
+			</div>
+			<div class="pw-8">
+				<img src="img/888.jpg" />
+			</div>
+		</div>
+		<!--个性化相册墙结束 -->
+		
+
+		<div class="hotpic"><!--板块样式类-->
+			<div class="hottitle"><!--标题类-->
+				<strong>热门相册  &nbsp;
+					<a href="3d.html" target="_blank" style="color:lemonchiffon;text-decoration: none;font-size: 25px;font-family: '微软雅黑' ;">更多>></a><!--为链接字体设置行内样式-->
+				</strong>		
+			</div>
+			<div class="hotsearch"><!--搜索类-->
+				<input type="text" placeholder="搜索您喜欢的" /><!--搜索框体及其静默内容-->
+				<a href="javascript:"><!--关联搜索功能JS脚本-->
+					<img src="img/search.png" /><!--搜索按钮图标-->
+				</a>
+			</div>
+			<div id="layer-photos-demo" class="layer-photos-demo"><!--浮动排列图片-->
+				<img layer-src="img/1498652171716.jpeg" src="img/1498652171716.jpeg" alt="第一张图片" />
+				<img layer-src="img/1498652206031.jpeg" src="img/1498652206031.jpeg" alt="第二张图片" />
+				<img layer-src="img/1498652238601.jpeg" src="img/1498652238601.jpeg" alt="第三张图片" />
+				<img layer-src="img/img-5967bc011f0e9d1758ee3f0716288eaf.jpg" src="img/img-5967bc011f0e9d1758ee3f0716288eaf.jpg" alt="第四张图片" />
+				<img layer-src="img/1498652265256.jpeg" src="img/1498652265256.jpeg" alt="第五张图片" />
+				<img layer-src="img/img-8d34ee966219bd4fb520a4755cbb143f.jpg" src="img/img-8d34ee966219bd4fb520a4755cbb143f.jpg" alt="第六张图片" />
+				<img layer-src="img/img-b163d8d403b8e1eefbe59b20c2293a87.jpg" src="img/img-b163d8d403b8e1eefbe59b20c2293a87.jpg" alt="第七张图片" />
+				<img layer-src="img/img-cf01cd641d3873f46164bb7492ad11bb.jpg" src="img/img-cf01cd641d3873f46164bb7492ad11bb.jpg" alt="第八张图片" />
+				<img layer-src="img/img-85bbc0fea0bea68c29f2ab8dfb95b1e2.jpg" src="img/img-85bbc0fea0bea68c29f2ab8dfb95b1e2.jpg" alt="第九张图片" /> 
+			</div>
+		</div>
+
+
+			<div class="bg"></div>
+
+			<!--滑动相册开始-->
+			<div class="slidepic">
+				<ul>
+					<li class="pic1">
+						<a href="javascript:">
+							<div class="dtxt">
+								<p class="p2">匆匆那年</p>
+								<p class="p2">我们见过太少世面</p>
+								<p class="p2">只爱看同一张脸</p>
+							</div>
+						</a>
+					</li>
+					<li class="pic2">
+						<a href="javascript:">
+							<div class="dtxt">
+								<p class="p2">短暂的狂欢以为</p>
+								<p class="p2">一生绵延</p>
+								<p class="p2">漫长的告别像是</p>
+								<p class="p2">青春盛宴</p>
+							</div>
+						</a>
+					</li>
+					<li class="pic3">
+						<a href="javascript:">
+							<div class="dtxt">
+								<p class="p2">我多么庆幸</p>
+								<p class="p2">如离别 你亦长处</p>
+								<p class="p2">心灵上  </p>
+								
+							</div>
+						</a>
+					</li>
+					<li class="pic4">
+						<a href="javascript:">
+							<div class="dtxt">
+								<p class="p2">当世事再没完美</p>
+								<p class="p2">可远在岁月如歌中</p>
+								<p class="p2">找你</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--滑动相册结束-->	
+
+
+		<!-- 滚动图片开始 -->
+		<div id="dmarquee">
+			<ul>
+				<li><img src="img/01.jpeg" ></li> 
+				<li><img src="img/02.jpg" ></li>  
+				<li><img src="img/03.jpg" ></li>  
+				<li><img src="img/04.jpg" ></li>  
+				<li><img src="img/05.jpg" ></li> 
+				<li><img src="img/06.jpg" ></li>
+				<li><img src="img/07.jpg" ></li>
+				<li><img src="img/08.jpg" ></li>
+			</ul>
+		</div>
+		<!-- 滚动图片结束 -->		
+
+		<script>
+		/*进行登录验证*/
+			function checkLogin(){
+				var uname = document.getElementById("txtUserName").value;
+				var pwd = document.getElementById("txtPwd").value;
+				if(uname==""){
+					alert("用户名不能为空");  /*用户名不为空*/
+				}else if(pwd == ""){
+					alert("密码不能为空");      /*密码不为空*/
+				}else if(uname == "admin"&&pwd == "admin"){
+					alert("登录成功");
+					var nav = document.getElementById("dnav");
+					nav.style.display = "none";
+					var div01 = document.getElementById("d1");
+					div01.innerHTML= "<h2 >用户："+uname+"</h5>"
+					hide();
+				}else{
+					alert("用户名或密码错误");  /*错误提示*/
+				}
+			}
+		/*	
+			登录名验证
+			function checkName(){
+				var name = document.getElementById("uregname").value;
+				if(name.length < 2 || name.length>10){
+					alert("用户名必须在2-10位，请返回重新输入");
+					return false;
+				}else{
+					return true;
+				}
+			}*/
+			/*密码检验
+			function checkPassword(){
+				var pwd = document.getElementById("uregpwd").value;
+				var repwd = document.getElementById("")
+			}*/
+			
+			
+			function Time() {
+				var time = new Date(); /* 获取当前时间*/
+				var yy = time.getFullYear(); /*获取当前年份*/
+				var MM = time.getMonth() + 1; /*获取当前月，由于取得的数字是0-11，所以要+1*/
+				var DD = time.getDate(); /*获取当前日期*/
+				var hh = time.getHours(); /*获取当前时*/
+				var mm = time.getMinutes(); /*获取当前分*/
+				var ss = time.getSeconds(); /*获取当前秒*/
+				var wk = time.getDay(); /*获取今天周几*/
+				//使日期格式一致
+				if(MM < 10) {
+					MM = "0" + MM;
+				}
+				if(DD < 10) {
+					DD = "0" + DD;
+				}
+				if(hh < 10) {
+					hh = "0" + hh;
+				}
+				if(mm < 10) {
+					mm = "0" + mm;
+				}
+				if(ss < 10) {
+					ss = "0" + ss;
+				}
+				/*由于获取的是数字，所以要将数字转换为汉字*/
+				switch(wk) {
+					case 1:
+						wk = '星期一';
+						break;
+					case 2:
+						wk = '星期二';
+						break;
+					case 3:
+						wk = '星期三';
+						break;
+					case 4:
+						wk = '星期四';
+						break;
+					case 5:
+						wk = '星期五';
+						break;
+					case 6:
+						wk = '星期六';
+						break;
+					case 0:
+						wk = '星期日';
+						break;
+					default:
+						break;
+				}
+				/*将日期按照给定格式写出来*/
+				document.getElementById("clock").innerHTML = "<h5>" + yy + "-" + MM + "-" + DD + "&nbsp;&nbsp;" + hh + ":" + mm + ":" + ss + "&nbsp;" + wk + "</h5>";
+			}
+			/*每秒动一次*/
+			setInterval("Time()", 1000);
+			
+			/*点击事件，使登录模块显示出来*/
+			function display() {
+				var div1 = document.getElementById("con");
+				div1.style.display = "block";
+			}
+			/*点击事件，使注册模块显示出来*/
+			function display1() {
+				var div2 =  document.getElementById("dreg");
+				div2.style.display = "block";
+			}
+			/*点击事件，使登录模块隐藏起来*/
+			function hide() {
+				document.getElementById("con").style.display = "none";
+			}
+			/*点击事件，使注册模块隐藏起来*/
+			function hide1() {
+				document.getElementById("dreg").style.display = "none";
+			}
+		</script>
+	</body>
+
+</html>

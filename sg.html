@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>时光留影</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="js/layer/skin/default/layer.css" />
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/layer/layer.js"></script>
+    <script type="text/javascript" src="js/jquery.kxbdMarquee.js" ></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+    <!--登录框开始-->
+    <div id="con">
+        <form id="loginForm">
+            <div class="sinput">
+                <input type="text" placeholder="手机/邮箱/用户名" name="txtUserName" id="txtUserName" /></div>
+            <div class="sinput">
+                <input type="password" placeholder="请输入密码" name="txtPwd" id="txtPwd" /></div>
+            <div class="sinput">
+                <a href="javascript:void(0);" id="btnLogin">登录</a>
+            </div>
+        </form>
+    </div>
+    <!--登录框结束-->
+
+    <!--注册开始-->
+    <div class="dreg">
+        <form id="regForm">
+            <div class="sinput">
+                <input type="text" placeholder="手机/邮箱/用户名" name="uregname" id="uregname" />
+            </div>
+            <div class="sinput">
+                <input type="password" placeholder="请输入密码" name="uregpwd" id="uregpwd" />
+            </div>
+            <div class="sinput">
+                <input type="password" placeholder="请输入确认密码" name="uregconfirmpwd" id="uregconfirmpwd" />
+            </div>
+            <div class="sinput">
+                <input type="text" placeholder="请输入注册邮箱" name="uregemail" id="uregemail" />
+            </div>
+            <div class="sinput">
+                <input type="text" placeholder="请输入注册QQ号码" name="uregqq" id="uregqq" />
+            </div>
+            <div class="sinput">
+                <a href="javascript:" id="btnreg">注册</a>
+            </div>
+        </form>
+    </div>
+    <!--注册结束-->
+
+    <!--头部开始-->
+    <div class="dtop">
+        <div>
+            <nav class="dnav">
+                <ul>
+                    <li>
+                        <a href="javascript:" id="aLogin">登录</a>
+                    </li>
+                    <li>
+                        <a href="javascript:" id="aReg">注册</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <canvas width="500" height="500" id="clock"></canvas>
+
+        <div class="dlogo">
+            <img src="img/logowhite.png" />
+        </div>
+
+        <div class="dtext">
+            <img src="img/slogan.png" />
+        </div>
+    </div>
+    <!--头部结束-->
+
+    <!--头部导航栏开始-->
+    <div class="topnav">
+        <div class="navlogo">
+            <img src="img/logoliuying.png" />
+        </div>
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a href="javascript:">首页</a>
+                </li>
+                <li>
+                    <a href="javascript:">热门</a>
+                </li>
+                <li>
+                    <a href="javascript:">关于</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--头部导航栏结束-->
+    <div class="hotpic">
+        <div class="hottitle">
+            <strong>热门相册  &nbsp;
+                <a href="3d.html" target="_blank" style="color: white;text-decoration: none;">更多>></a>
+            </strong>
+        </div>
+        <div class="hotsearch">
+            <input type="text" placeholder="搜索您喜欢的" />
+            <a href="javascript:">
+                <img src="img/search.png" />
+            </a>
+        </div>
+
+        <!--相册开始-->
+        <div id="layer-photos-demo" class="layer-photos-demo">
+            <img layer-src="img/photo1.jpg" src="img/photo1.jpg" alt="第一张图片" />
+            <img layer-src="img/photo2.jpg" src="img/photo2.jpg" alt="第二张图片" />
+            <img layer-src="img/photo3.jpg" src="img/photo3.jpg" alt="第三张图片" />
+            <img layer-src="img/photo4.jpg" src="img/photo4.jpg" alt="第四张图片" />
+            <img layer-src="img/photo5.jpg" src="img/photo5.jpg" alt="第五张图片" />
+            <img layer-src="img/photo6.jpg" src="img/photo6.jpg" alt="第六张图片" />
+            <img layer-src="img/photo7.jpg" src="img/photo7.jpg" alt="第七张图片" />
+            <img layer-src="img/photo8.jpg" src="img/photo8.jpg" alt="第八张图片" />
+        </div>
+        <!--相册结束-->
+
+        <!--滑动相册开始-->
+        <div class="slidepic">
+            <ul>
+                <li class="pic1">
+                    <a href="javascript:">
+                        <div class="dtxt">
+                            <p class="p1">作者 ： 鲁迅</p>
+                            <p class="p2">我的个人拉萨之旅｜｜故事之旅</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="pic2">
+                    <a href="javascript:">
+                        <div class="dtxt">
+                            <p class="p1">作者 ： 郭沫若</p>
+                            <p class="p2">我的个人丽江之旅｜｜艳遇之旅</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="pic3">
+                    <a href="javascript:">
+                        <div class="dtxt">
+                            <p class="p1">作者 ： 韩寒</p>
+                            <p class="p2">我的个人成都之旅｜｜安逸之旅</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="pic4">
+                    <a href="javascript:">
+                        <div class="dtxt">
+                            <p class="p1">作者 ： 矛盾</p>
+                            <p class="p2">我的个人海南之旅｜｜海鲜之旅</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--滑动相册结束-->
+    </div>
+
+    <!--个性化相册墙开始 -->
+    <div class="d-pic-wall">
+        <div class="d-wall-title">
+            <strong>个性化相册墙</strong>
+        </div>
+        <div class="pw-1">
+            <img src="img/w1.jpg" />
+        </div>
+        <div class="pw-2">
+            <img src="img/w2.jpg" />
+        </div>
+        <div class="pw-3">
+            <img src="img/w3.jpg" />
+        </div>
+        <div class="pw-4">
+            <img src="img/w4.jpg" />
+        </div>
+        <div class="pw-5">
+            <img src="img/w5.jpg" />
+        </div>
+        <div class="pw-6">
+            <img src="img/w6.jpg" />
+        </div>
+        <div class="pw-7">
+            <img src="img/w7.jpg" />
+        </div>
+        <div class="pw-8">
+            <img src="img/w8.jpg" />
+        </div>
+        <div class="pw-9">
+            <img src="img/w9.jpg" />
+        </div>
+        <div class="pw-10">
+            <img src="img/w10.jpg" />
+        </div>
+        <div class="pw-11">
+            <img src="img/w11.jpg" />
+        </div>
+    </div>
+    <!--个性化相册墙结束 -->
+
+    <!-- 滚动图片开始 -->
+    <div id="dmarquee">
+        <ul>
+            <li><img src="img/01s.jpg" ></li>
+            <li><img src="img/02s.jpg" ></li>
+            <li><img src="img/03s.jpg" ></li>
+            <li><img src="img/04s.jpg" ></li>
+            <li><img src="img/05s.jpg" ></li>
+            <li><img src="img/06s.jpg" ></li>
+            <li><img src="img/07s.jpg" ></li>
+            <li><img src="img/08s.jpg" ></li>
+        </ul>
+    </div>
+    <!-- 滚动图片结束 -->
+</body>
+</html>

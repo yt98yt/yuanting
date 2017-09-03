@@ -1,0 +1,82 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "微软雅黑";
+}
+.comtop{
+	width: 90%;
+	height:429px ;
+	border: 1px solid #CCCCCC;
+	margin-left: 5%;
+}
+.comleft{
+	float: left;
+	width: 55%;
+	height: 429px;
+}
+.comleft img{
+	width: 100%;
+	height: 100%;
+}
+.comrigth{	
+	width: 45%;
+	height: 429px;	
+	overflow:  hidden;
+}
+.pictitle{
+	width: 100%;	
+	font-size: 30px;
+	text-align: center;
+}
+.dintro{
+	width: 100%;	
+	font-size: 15px;
+	text-align: center;
+}
+.usercom{
+	width: 90%;	
+	margin-left: 5%;
+	margin-top: 30px;
+}
+.writecom{
+	margin-top: 20px;
+	width: 90%;
+	margin-left: 5%;
+	height: 150px;
+	border: 1px solid #ccc;
+}
+.writecom textarea{
+	width: 100%;
+	height: 75%;
+	border: 1px solid #ccc;
+}
+.writecom a{
+	float: right;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	display: block;	
+	background-color: blue;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;
+}
+.writecom a:hover{
+	background-color: #379be9;
+}
+.txtcom{
+	margin-top: 20px;	
+}
+.txtcom div{
+	margin-top: 10px;
+}
+.com1 a{
+	text-decoration: none;
+}
+.com2{
+	font-size: 16px;
+}
+.txtcom a{
+	text-decoration: none;
+}
